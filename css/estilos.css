@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* variable */
+:root{
+--green-color: #7ACC2D;
+--white-color: white;
+--black-color: #313337;
+/* espaciado */
+--space: 10px;
+/* tipografia */
+--normal: 12px;
+/* box shadow */
+--box: 0 0 2px #c1bcbc;
+}
+
+html,body{
+	padding: 0px;
+	margin: 0px;
+	font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+	display: flex;
+	background-color: var(--green-color);
+	padding: var(--space);
+	color: var(--white-color);
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul{
+	display: flex;
+}
+nav li{
+	padding-left: 20px;
+	list-style: none;
+}
+nav li a{
+	color: var(--black-color);
+	text-decoration: none;
+}
+
+nav li a:hover{
+	color:var(--white-color);
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	height: 50px;
+	justify-content: space-between;
+	padding: 0 20px;
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+
+.contact a{
+	color: var(--green-color);
+}
+
+label, p{
+	font-size: var(--normal);
+}
+
+/* main section */
+
+.main_section{
+	padding: 20%;
+	align-content: center;
+}
+.main_section h1{
+	text-align: center;
+}
+
+
+.products{
+	background-image: url('../images/curve.png');
+	height: 50px;
+	background-size: cover;
+	background-position: center top;
+	padding:10% 20%;
+	display: flex;
+
+}
+.product{
+	padding: var(--space);
+	margin-top: -250px;
+}
+.product .content{
+	background-color: var(--white-color);
+	box-shadow: var(--box);
+	padding: 10%;
+}
+
+.characteristics{
+	padding: 10% 10%;
+	width: 0 auto;
+	background-color: white;
+	display: flex;
+}
+.characteristic h1{
+	text-align: center;
+}
+.characteristic .content{
+	background-color: var(--white-color);
+	padding: 10%;
+}
+
+.mentions{
+	background-size: cover;
+	background-position: center top;
+	padding: 10% 10%;
+	display: flex;
+}
+.mentions_title{
+	text-align: center;
+}
+.mention{
+	padding: var(--space);
+	
+}
+.img_content{
+	text-align: center;
+}
+
+.mention .img_content {
+	text-align: center;
+	background-image: url('../images/people1.jpg'); 
+	height: 120px;
+	background-size: cover;
+	background-position-y: -10px;
+	overflow: hidden;
+
+}
+
+
+.mention .content{
+	background-color: var(--white-color);
+	box-shadow: var(--box);
+	border-top: 5px;
+}
+
+.mention h1{
+	margin: 0;
+	padding: 10px;
+}
+.mention p{
+	padding: 10px;
+}
+
+.main_button{
+	background-color: var(--green-color);
+	width: 100%;
+	padding: var(--space);
+	font-size: 17px;
+	color: var(--white-color);
+	border:0;
+	border-radius: 2px;	
+	align-items: center;
+
+}
+
+.main_button:hover{
+	background-color: #5e9e22;
+	cursor: pointer;
+
+}
+
+.modulo_pago{
+	background-color: var(--white-color);
+	box-shadow: var(--box);
+	padding: var(--space);
+}
+
+.data{
+	margin-top: var(--space);
+	width: 100%;
+	height: 35px;
+	border-radius: 2px;
+	border: 1px solid var(--black-color);
+	box-sizing: border-box;
+}
+.modulo_pago .main_button{
+	margin-top: 10px;
+}
+
+.modulo_pago_images{
+	max-width: 150px;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
